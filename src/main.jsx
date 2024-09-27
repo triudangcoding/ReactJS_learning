@@ -1,20 +1,29 @@
-import React, { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-// import App from './App.jsx'
-import './index.css'
 
-function Ex1()
-{
-  return(
-    <div>
-      <h2 className="title">Simple no-tricks pricing</h2>
-      <hr />
-      <a href="/buy" className="button">
-        Buy Now <span aria-hidden="true">→</span>
-      </a>
-    </div>
-  );
+// import App from '../src/App';
+import React from 'react';
+import './index.css';
+import ReactDOM from 'react-dom/client';
+import Header from './Header';
+import Form from './Form';
+
+
+
+function Main() {
+    return (
+        <>  
+        <Header />  
+        <Form />  
+    </>  
+    );
 }
 
 
-createRoot(document.getElementById("root")).render(<Ex1 />);
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <React.StrictMode>
+        <Main/>
+    </React.StrictMode>
+
+);
+
+
+

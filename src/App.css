@@ -18,6 +18,12 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.banner-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #60a5fa;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -40,3 +46,5 @@
 .read-the-docs {
   color: #888;
 }
+
+
